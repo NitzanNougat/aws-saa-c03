@@ -9,21 +9,22 @@ This page contains notes primarily from Adrian Cantrill’s [AWS Solutions Archi
 - https://tutorialsdojo.com/aws-cheat-sheets/
 
 
-# 🧔 Accounts - Identity and Access Management (IAM) Basics
+# Accounts - Identity and Access Management (IAM) Basics
 
 ## Account and IAM **Basics**
 
-💡 **AWS Account:** Container for **identities** (users) and **resources.** 
-
-Account **root user** has full control over all of the AWS account and any resources created within in. The root user can’t be restricted. 
+**AWS Account**: Container for all **resources**, with a global, isolated IAM (DB) for all **identities**.
+### Identities
+**root user** cant be restricted
 
 IAM **User Groups** and **Roles** can also be created and given full or limited permissions. All identities start with no permissions. 
 
 May be good practice to create multiple AWS Accounts for different uses (prod, dev, test).
 
-
+##### IAM:
 - Every AWS account comes with its own running copy of IAM, which is a database.
-- IAM is a globally resilient service, so any data is always secure across all AWS regions. (Exam Q)
+- Iam is global
+
 - The IAM in each of your accounts is your own dedicated instance of IAM, separate from other accounts.
 - IAM
     - User
